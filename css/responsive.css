@@ -1,0 +1,370 @@
+
+@media screen and (max-width: 575px){
+    /* -----------navbar start--------- */
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+     /* -----------navbar end--------- */
+
+
+     /* -------benner part start--------- */
+     .benner-main {
+        flex-direction: column-reverse;
+        margin:0 20px;
+    }
+    .main-logo img {
+        width: 100%;
+    }
+    .benner-text {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .benner-text h1 {
+        font-size: 2rem;
+        line-height: 38px;
+    }
+    .benner-text p {
+        font-size: 1rem;
+        width: auto;
+    }
+     /* -------benner part end--------- */
+
+     /* ======company logo start------ */
+     .company-logo-main {
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin:0 20px;
+    }
+
+    
+     /* ======company logo end------ */
+
+     /* -----------product part start------ */
+     .popular-connection-item {
+        grid-template-columns: repeat(1 , 1fr);
+        margin:0 20px;
+    }
+    .see-more {
+        text-align: center;
+    }
+     /* -----------product part end------ */
+
+     /* -----feature part start---------- */
+     .feature-main {
+        flex-direction: column;
+        margin:0 20px;
+    }
+    .feature-image {
+        width: 100%;
+    }
+    .feature-text {
+        width: 100%;
+        text-align: center;
+    }
+    .feature-text h2 {
+        font-size: 32px;
+    }.feature-text p {
+        margin: 10px 0;
+        margin-bottom:40px;
+    }
+
+     /* -----feature part end---------- */
+
+     /* footer part start */
+     #footer {
+        background: #000;
+        padding: 15px 0;
+        margin-top: 175px;
+    }
+    .footer-main h2 {
+        font-size: 29px;
+        color: #fff;
+        font-weight: 700;
+    }
+    .footer-main p {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 500;
+        margin: 21px;
+    }
+     /* footer part end */
+}
+
+/* ==end mobile device====== */
+
+/* ===start tablet device========== */
+
+@media screen and (min-width: 576px) and (max-width:767px){
+
+    .main-section{
+        margin:0 20px;
+    }
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+    /* -end navbar= */
+
+
+    /* ----benner part start----- */
+    .benner-main {
+        flex-direction: column-reverse;
+        margin: 0 20PX;
+    }
+    .main-logo img {
+        width: 90%;
+    }
+    .benner-text {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .benner-text h1 {
+        font-size: 2rem;
+        line-height: 38px;
+    }
+    .benner-text p {
+        font-size: 1rem;
+        width: auto;
+    }
+    .main-logo {
+        text-align: center;
+    }
+
+
+
+    /* ----company logo start------- */
+    .company-logo-main {
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin:0 20px;
+    }
+
+
+    /* -----------product part start------ */
+    .popular-connection-item {
+        grid-template-columns: repeat(2 , 1fr);
+        margin:0 20px;
+    }
+    .see-more {
+        text-align: center;
+    }
+     /* -----------product part end------ */
+
+         /* -----feature part start---------- */
+         .feature-main {
+            flex-direction: column;
+        }
+        .feature-image {
+            width: 100%;
+            text-align: center;
+        }
+        .feature-image {
+            width: 100%;
+        }
+        .feature-text {
+            width: 100%;
+            text-align: center;
+        }
+        .feature-text h2 {
+            font-size: 32px;
+        }.feature-text p {
+            margin: 10px 0;
+            margin-bottom:40px;
+        }
+    
+         /* -----feature part end---------- */
+    
+         /* footer part start */
+         #footer {
+            background: #000;
+            padding: 15px 0;
+            margin-top: 175px;
+        }
+        .footer-main h2 {
+            font-size: 29px;
+            color: #fff;
+            font-weight: 700;
+        }
+        .footer-main p {
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            margin: 21px;
+        }
+         /* footer part end */
+}
+
+
+/* ----------fot tablet device------------- */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    /* navbar start */
+    .navbar-container {
+        padding: 0 69px;
+    }
+    /* navbar end */
+
+    /* benner part start */
+    .benner-main {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 70px;
+    }
+    .main-logo img {
+        width: 100%;
+    }
+    .benner-text {
+        margin-top: 43px;
+    }
+    .benner-text h1 {
+        font-size: 2rem;
+        line-height: 39px;
+    }
+    /* benner part end */
+
+    
+    /* ----company logo start------- */
+    .company-logo-main {
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0 70px;
+    }
+
+
+    /* -----------product part start------ */
+    .popular-connection-item {
+        grid-template-columns: repeat(2 , 1fr);
+        margin: 0 70px;
+    }
+    .see-more {
+        text-align: center;
+    }
+     /* -----------product part end------ */
+
+  /* -----feature part start---------- */
+  .feature-main {
+    flex-direction: column;
+}
+.feature-image {
+	width: 100%;
+	text-align: center;
+}
+.feature-text {
+    width: 100%;
+    text-align: center;
+}
+.feature-text h2 {
+    font-size: 32px;
+}.feature-text p {
+    margin: 10px 0;
+    margin-bottom:40px;
+}
+
+ /* -----feature part end---------- */
+}
