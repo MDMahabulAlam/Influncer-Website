@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 500px){
     /* -----------navbar start--------- */
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
@@ -95,7 +95,7 @@
 
 /* ===start tablet device========== */
 
-@media screen and (min-width: 576px) and (max-width:767px){
+@media screen and (min-width: 576px) and (max-width: 767px){
 
     .main-section{
         margin:0 20px;
